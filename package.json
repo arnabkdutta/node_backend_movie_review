@@ -4,12 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./node_modules/babel-cli/bin/babel-node.js index.js"
   },
   "keywords": [],
   "author": "Arnab k dutta",
   "license": "ISC",
   "dependencies": {
-    "moviedb": "^0.2.10"
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "express": "^4.16.3",
+    "moviedb": "^0.2.10",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "babel-preset-latest": "^6.24.1"
   }
 }
