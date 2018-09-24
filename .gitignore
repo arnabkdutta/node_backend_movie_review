@@ -1,5 +1,5 @@
 # dependency module
-# node_modules/
+node_modules/
 
 #ignore package.lock.jspn
-package-lock.json
+./package-lock.json
