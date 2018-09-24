@@ -1,2 +1,5 @@
-# node_modules file not be uploded
-./node_modules
+# dependency module
+# node_modules/
+
+#ignore package.lock.jspn
+package-lock.json
