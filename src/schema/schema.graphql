@@ -1,0 +1,17 @@
+type Query{
+    getMovieDetails(movieName: String!,year:int,page:int):[movieDetails!]!
+}
+
+type movieDetails{
+    id:int
+    video: boolean,
+    vote_average: int,
+    title: String,
+    popularity: int,
+    poster_path: String,
+    original_language: String,
+    original_title: String
+    backdrop_path: String
+    adult:boolean
+    release_date:String
+}

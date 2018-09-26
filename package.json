@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./node_modules/babel-cli/bin/babel-node.js index.js"
+    "start": "node ./node_modules/babel-cli/bin/babel-node.js index.js"
   },
   "keywords": [],
   "author": "Arnab k dutta",
@@ -14,7 +14,10 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
     "express": "^4.16.3",
+    "graphql-yoga": "^1.16.2",
+    "lodash": "^4.17.11",
     "moviedb": "^0.2.10",
     "request": "^2.88.0"
   },
