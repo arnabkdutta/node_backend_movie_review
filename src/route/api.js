@@ -1,4 +1,4 @@
-import { getLatestMovie, getTopRatedtMovie } from "../service/service";
+import { getLatestMovie, getTopRatedtMovie, getmoviNameById } from "../service/service";
 
 export default ({ movie_db }, app) => {
   app.get("/getMovieName/movieName/:movieName", (req, res) => {
@@ -34,6 +34,16 @@ export default ({ movie_db }, app) => {
 
   app.get("/getTopRated", (req, res) => {
     getTopRatedtMovie()
+      .then(response => {
+        res.send(response);
+      })
+      .catch(error => {
+        res.send({ error: error.stack });
+      });
+  });
+
+  app.get("/getMovieDetailsById/:id", (req, res) => {
+    getmoviNameById(req.params.id)
       .then(response => {
         res.send(response);
       })
